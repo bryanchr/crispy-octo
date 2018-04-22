@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "91086373040",
+    "firebase_url": "https://authentication-f5f34.firebaseio.com",
+    "project_id": "authentication-f5f34",
+    "storage_bucket": "authentication-f5f34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91086373040:android:6ca0e3e9df9256b3",
+        "android_client_info": {
+          "package_name": "com.example.lenovo.healthmax"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91086373040-8n066h9r0hlb4bhssh7hgk7ukoc4gak5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lenovo.healthmax",
+            "certificate_hash": "8a8acf85b4ad275c95efb7c86b13feb6c99d292b"
+          }
+        },
+        {
+          "client_id": "91086373040-173cjmjh9lau9j7k1larjctu1pomvh5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLqBE586olwjJwpnNnyZXWBsSJ0oqriGw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91086373040-173cjmjh9lau9j7k1larjctu1pomvh5k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
