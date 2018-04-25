@@ -3,6 +3,7 @@ package com.example.lenovo.healthmax;
 public class noteModel {
     public String noteTitle;
     public String noteTime;
+    public String id;
 
     public noteModel(){
 

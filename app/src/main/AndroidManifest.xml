@@ -22,7 +22,7 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".historyDisease" />
         <activity android:name=".homeActivity" />
-        <activity android:name=".medicationActivity" />
+        <activity android:name=".MedicationActivity" />
         <activity android:name=".formHistory" />
     </application>
 

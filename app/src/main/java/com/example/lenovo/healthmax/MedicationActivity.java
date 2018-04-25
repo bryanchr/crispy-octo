@@ -60,8 +60,8 @@ public class MedicationActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
         dialog = new SpotsDialog(MedicationActivity.this);
-        title = (MaterialEditText)findViewById(R.id.title);
-        description = (MaterialEditText)findViewById(R.id.description);
+        title = (MaterialEditText)findViewById(R.id.title1);
+        description = (MaterialEditText)findViewById(R.id.description1);
         fab = (FloatingActionButton)findViewById(R.id.fab);
 
         fab.setOnClickListener(new View.OnClickListener() {
@@ -132,7 +132,7 @@ public class MedicationActivity extends AppCompatActivity {
         String id = UUID.randomUUID().toString();
         Map<String,Object> todo = new HashMap<>();
         todo.put("id",id);
-        todo.put("titile",title);
+        todo.put("title",title);
         todo.put("description",description);
 
         db.collection("ToDoList").document(id)
@@ -161,7 +161,6 @@ public class MedicationActivity extends AppCompatActivity {
                             toDoList.add(todo);
                         }
                             adapter = new ListItemAdapter(MedicationActivity.this,toDoList);
-//                            adapter = new ListItemAdapter();
                             listItem.setAdapter(adapter);
                             dialog.dismiss();
                     }

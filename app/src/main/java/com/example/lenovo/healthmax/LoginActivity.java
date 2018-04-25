@@ -38,7 +38,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if(firebaseAuth.getCurrentUser() !=null){
 
             finish();
-            startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
+            startActivity(new Intent(getApplicationContext(),homeActivity.class));
+//            startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
 
         }
         progressDialog = new ProgressDialog(this);

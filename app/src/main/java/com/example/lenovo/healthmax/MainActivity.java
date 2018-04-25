@@ -108,17 +108,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    @Override
-    protected void onStart(){
-        super.onStart();
-        firebaseAuth.addAuthStateListener(firebaseAuthListener);
-    }
-
-    @Override
-    protected  void onStop(){
-        super.onStop();
-        firebaseAuth.removeAuthStateListener(firebaseAuthListener);
-    }
 
 
 

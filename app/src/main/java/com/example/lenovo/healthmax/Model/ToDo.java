@@ -33,7 +33,7 @@ public class ToDo {
         return description;
     }
 
-    public void setDescription(String descriptionl) {
+    public void setDescription(String description) {
         this.description = description;
     }
 }

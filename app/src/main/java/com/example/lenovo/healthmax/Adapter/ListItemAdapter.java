@@ -1,8 +1,8 @@
 package com.example.lenovo.healthmax.Adapter;
 
-import android.content.ClipData;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -49,42 +49,42 @@ class ListItemViewHolder extends RecyclerView.ViewHolder implements View.OnClick
 
 public class ListItemAdapter extends RecyclerView.Adapter<ListItemViewHolder> {
     MedicationActivity medicationActivity;
-    List<ToDo> toDoList;
+    List<ToDo> todoList;
 
-    public ListItemAdapter(MedicationActivity medicationActivity, List<ToDo> toDoList){
+    public ListItemAdapter(MedicationActivity medicationActivity, List<ToDo> todoList){
         this.medicationActivity = medicationActivity;
-        this.toDoList = toDoList;
+        this.todoList = todoList;
     }
 
     @NonNull
     @Override
     public ListItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(medicationActivity.getBaseContext());
-        View view = inflater.inflate(android.R.layout.activity_list_item,parent,false);
+        View view = inflater.inflate(R.layout.list_item,parent,false);
         return new ListItemViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ListItemViewHolder holder, int position) {
 
-
-        holder.item_title.setText(toDoList.get(position).getTitle());
-        holder.item_description.setText(toDoList.get(position).getDescription());
+        Log.d("Item", "_" + todoList.get(position).getTitle() + "_ | " + todoList.get(position).getDescription());
+        holder.item_title.setText(todoList.get(position).getTitle());
+          holder.item_description.setText(todoList.get(position).getDescription());
 
         holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onClick(View view, int position, boolean isLongClick) {
-                medicationActivity.title.setText(toDoList.get(position).getTitle() );
-                medicationActivity.description.setText(toDoList.get(position).getDescription());
+                medicationActivity.title.setText(todoList.get(position).getTitle() );
+                medicationActivity.description.setText(todoList.get(position).getDescription());
 
                 medicationActivity.isUpdate=true;
-                medicationActivity.idUpdate=toDoList.get(position).getId();
+                medicationActivity.idUpdate=todoList.get(position).getId();
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return toDoList.size();
+        return todoList.size();
     }
 }

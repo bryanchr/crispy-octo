@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.lenovo.healthmax.medicationActivity">
+    tools:context="com.example.lenovo.healthmax.MedicationActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar_layout"
@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content">
 
                 <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/title"
+                    android:id="@+id/title1"
                     android:text="Title"
                     android:textSize="30sp"
                     android:inputType="text"
@@ -35,7 +35,7 @@
                     app:met_singleLineEllipsis="true"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/description"
+                    android:id="@+id/description1"
                     android:text="Description"
                     android:textSize="30sp"
                     android:inputType="textMultiLine"

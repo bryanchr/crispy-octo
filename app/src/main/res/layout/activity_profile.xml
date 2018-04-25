@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/new_login_gradients"
+    android:background="#FFFFFF"
     tools:context="com.example.lenovo.healthmax.ProfileActivity">
 
     <LinearLayout
@@ -18,46 +18,46 @@
 
 
         <TextView
-            android:text="Welcome!"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:drawablePadding="12dp"
             android:paddingBottom="20dp"
+            android:text="WELCOME"
             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#9E9E9E"
             android:textStyle="bold" />
-
 
 
         <TextView
                 android:id="@+id/textViewUserEmail"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
                 android:drawablePadding="12dp"
-                android:paddingBottom="20dp"
-                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
                 android:textStyle="bold" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#fff"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#757575" />
 
             <TextView
                 android:id="@+id/textViewUserName"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
                 android:drawablePadding="12dp"
-                android:paddingBottom="20dp"
+                android:drawableLeft="@drawable/ic_account_box_black_24dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#f9d7db"/>
+                android:paddingBottom="20dp"
+                android:background="#757575"/>
 
             <Button
                     android:id="@+id/buttonLogout"
